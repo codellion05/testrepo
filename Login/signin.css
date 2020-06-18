@@ -79,3 +79,8 @@ margin-left: -15em;
 border:1px solid #fff;
 }
 }
+
+#email-error {
+    color : red;
+    font-weight: bold;
+}
