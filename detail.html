@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    
+    <title>Buyer Details</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!---Import detail.css-->
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+
+    <!--Navigation Bar Start-->
+    <nav class="nav-wrapper orange darken-1">
+        <div class="container">
+            <ul class="right">
+                <li>
+                    <!--Search field-->
+                    <form>
+                        <div class="input-field">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons black-text">search</i></label>
+                        <i class="material-icons">close</i>
+                        </div>
+                    </form>
+                    <!--Search field ends-->
+                </li>
+                <li>
+                    <!--Filter Button with actions-->
+                    <form>
+                        <div class="input-field">
+                            <select>
+                                <optgroup label="Filter">
+                                    <option value="0">None</option>
+                                </optgroup>
+                                <optgroup label="Price">
+                                    <option value="1">Low to high</option>
+                                    <option value="2">High to low</option>
+                                </optgroup>
+                                <optgroup label="Product">
+                                    <option value="3">Fruits</option>
+                                    <option value="4">Vegetables</option>
+                                    <option value="5">Others</option>
+                                </optgroup>
+                            </select>
+                            <label></label>
+                        </div>
+                    </form>
+                    <!--Filter Button end-->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Navigation Bar End-->
+
+    <!--Rest body start-->
+    <div class="container">
+        <h3>Buyer Details</h3>
+        <!--CSS grid start-->
+        <div class="row">
+            <div class="col s12 l6">
+                <!--Card for user information-->
+                <div class="card">
+                    <div class="card-content">
+                        <!--All card contents-->
+                        <span class="card-title">Name here</span>
+                        <p>Address here</p>
+                        <p>Phone here</p>
+                        <p>Quantity brought here</p>
+                        <p>Price paid here</p>
+                    </div>
+                </div>
+                <!--Card end-->
+            </div>
+            <!--Dummy second card just for reference on how two or more cards going to look in small and large screens. To populate the data, code of one card is sufficient. So the below code can be omitted. To see how two cards will look, just uncomment the below code.-->
+            <!--<div class="col s12 l6">
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">Name Here</span>
+                        <p>Address here</p>
+                        <p>Phone here</p>
+                        <p>Quantity brought here</p>
+                        <p>Price paid here</p>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        <!--CSS grid end-->
+    </div>
+    <!--Rest body end-->
+    
+    <!--Scripts-->
+    <!--jquery script-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+     <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".dropdown-trigger").dropdown();
+            $('select').formSelect();
+        })
+    </script> 
+
+</body>
+</html>
