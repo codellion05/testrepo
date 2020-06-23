@@ -4,6 +4,9 @@ body{
     overflow-y:auto !important;
     background-color: #f4e4a9;
 }
+#name {
+    font-weight: bold;
+}
 input.select-dropdown{
     padding: 0 15px    !important;
     font-size: 1rem    !important;
@@ -34,4 +37,10 @@ nav ul input.select-dropdown {
 nav ul input.select-dropdown {
          border-bottom: 1px solid #000000 !important;
     }
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
