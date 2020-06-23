@@ -43,7 +43,6 @@ db.collectionGroup('buyers_detail').get()
                         // adding cards info to card-dynamic tag
                         $(document).ready(function(){
                             card_number = card_number + 1;
-                            //if (card_number%2 == 1){
                                 $("#detailList").append(
                                         `<li><div class="card">
                                             <div class="card-content">
@@ -51,24 +50,10 @@ db.collectionGroup('buyers_detail').get()
                                                 <p id="address">Address : ${users_doc.data().address}</p>
                                                 <p>Phone_no : ${users_doc.data().phone_no}</p>
                                                 <p>Quantity : ${buyers_doc.data().quantity}</p>
-                                                <p class="price">${buyers_doc.data().price}</p>
+                                                <p>Price : <span class="price">${buyers_doc.data().price}</span></p>
                                             </div>
                                         </div></li>`
                             );
-                            //}
-                            /*else if (card_number%2 == 0){
-                                $("#dynamic-card2").append(
-                                    `<div class="card">
-                                        <div class="card-content">
-                                            <span class="card-title" id="name">${users_doc.data().name}</span>
-                                            <p id="address">Address : ${users_doc.data().address}</p>
-                                            <p>Phone_no : ${users_doc.data().phone_no}</p>
-                                            <p>Quantity : ${buyers_doc.data().quantity}</p>
-                                            <p class="price">Price : ${buyers_doc.data().price}</p>
-                                        </div>
-                                    </div>`
-                                );
-                            }*/
                         });
                 }
             })

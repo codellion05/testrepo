@@ -95,10 +95,10 @@
                 var selectedValue = $(this).children("option:selected").val();
                 console.log(selectedValue);
                 if (selectedValue == 1){
-                   sort('ul.sortThis>li', 'p.price');
+                   sort('ul.sortThis>li', 'span.price');
                 }
                 else if(selectedValue == 2){
-                    sortReverse('ul.sortThis>li', 'p.price');
+                    sortReverse('ul.sortThis>li', 'span.price');
                 }
                 //console.log($('.card .price').text());
             });
